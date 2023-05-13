@@ -93,7 +93,6 @@ def main():
        'GaussianNB': GaussianNB(),
        'BernoulliNB': BernoulliNB(),
        'LogisticRegression': LogisticRegression(),
-       'SVC': SVC(kernel='rbf'),
        'kNN': KNeighborsClassifier(n_neighbors=5),
    }
 
@@ -102,9 +101,9 @@ def main():
      model.fit(X_train, y_train)
      score = model.score(X_valid, y_valid)
      print(f'{m} validation score => {score}')
-   #GaussianNB has the best validation score
+   #kNN has the best validation score
 
-   k_model=GaussianNB()
+   k_model=KNeighborsClassifier(n_neighbors=9)
    k_model.fit(X_train, y_train)
 
    validation_score = k_model.score(X_valid, y_valid)
