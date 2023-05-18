@@ -1,5 +1,6 @@
 -This code does the same thing with previous code which is in the README file but this one uses neural network instead of the previous methods.
 -If the output is bigger than 0.5, program predicts that it is a fraud. If it is smaller than 0.5, program predicts that it is not a fraud.
+(Actually, output is the probability of being a fraud. When it is bigger than 0.5, it means that it has high probability of being a fraud that's why it assigns as a fraud.)
 -Data source is the same with the previous one which is from Kaggle.
 '''
 import pandas as pd
