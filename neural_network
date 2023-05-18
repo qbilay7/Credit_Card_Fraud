@@ -1,6 +1,6 @@
 -This code does the same thing with previous code which is in the README file but this one uses neural network instead of the previous methods.
 -If the output is bigger than 0.5, program predicts that it is a fraud. If it is smaller than 0.5, program predicts that it is not a fraud.
-
+-Data source is the same with the previous one which is from Kaggle.
 '''
 import pandas as pd
 import numpy as np
@@ -23,7 +23,7 @@ from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 
 # Load data from CSV
-df = pd.read_csv('Desktop/card_transdata.csv')
+df = pd.read_csv('card_transdata.csv')
 
 # Split into features and target
 X = df.iloc[:, :-1]
